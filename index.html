@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LoRAbit</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #111111;
+      --card: #1b1b1b;
+      --text: #f4f4f4;
+      --muted: #b8b8b8;
+      --line: #313131;
+      --link: #8ec5ff;
+      --accent: #e6802e;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8f3ef;
+        --card: #ffffff;
+        --text: #1d1d1f;
+        --muted: #62646a;
+        --line: #e4d7ce;
+        --link: #a44f38;
+        --accent: #a44f38;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2.2rem, 7vw, 4.4rem);
+      line-height: 1;
+    }
+    h2 { margin-top: 0; line-height: 1.25; }
+    p, li { font-size: 1rem; }
+    .tagline { color: var(--muted); font-size: 1.15rem; max-width: 720px; }
+    .links a {
+      display: inline-block;
+      margin: 10px 14px 0 0;
+      color: var(--link);
+      font-weight: 700;
+    }
+    .badge {
+      display: inline-block;
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      margin-bottom: 16px;
+    }
+    ul { padding-left: 1.2rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <span class="badge">MLX LoRA Workspace</span>
+      <h1>LoRAbit</h1>
+      <p class="tagline">LoRAbit helps organize an MLX-based local LoRA workflow: prepare datasets, inspect model folders, run preflight checks, train adapters, and export results from one workspace.</p>
+      <p class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+        <a href="https://github.com/Facta-Leopard/LoRAbit">Project Repository</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>What LoRAbit is for</h2>
+      <ul>
+        <li>Local session-based LoRA training workflows</li>
+        <li>Dataset preparation from supported local files and folders</li>
+        <li>Conservative preflight checks before training</li>
+        <li>MLX adapter and inference-ready export organization</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>For privacy, support, feedback, or partnership inquiries, contact <a href="mailto:shteosis@gmail.com">shteosis@gmail.com</a>.</p>
+    </section>
+  </main>
+</body>
+</html>
